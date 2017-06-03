@@ -37,10 +37,10 @@ type
       procedure OnClientDestroy(const client: TServerClient<ClientType>); virtual;
       procedure OnClientConnect(const client: TServerClient<ClientType>); virtual;
       procedure OnClientDisconnect(const client: TServerClient<ClientType>); virtual;
+      procedure Start;
     public
       constructor Create(const serverCreateOptions: TServerCreateOptions);
       destructor Destroy; override;
-      procedure Start;
   end;
 
 implementation
